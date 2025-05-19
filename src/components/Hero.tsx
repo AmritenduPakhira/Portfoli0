@@ -473,7 +473,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <a
-              href="https://drive.google.com/file/d/1kEUZ_ukVmow4fnUioHvxh21yE6D8989S/view?usp=sharing"
+              href="/Lor.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               download
@@ -502,14 +502,14 @@ const Hero: React.FC = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "flex-start",
-                transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out", /* ट्रांजिशन जोड़ा गया */
+                transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out", 
               }}
-              onMouseEnter={(e) => { /* Mouse enter इवेंट हैंडलर */
+              onMouseEnter={(e) => { 
                 e.currentTarget.style.transform = "scale(1.05)";
                 e.currentTarget.style.backgroundColor = "#e0f7fa";
-                e.currentTarget.style.cursor = "pointer"; /* कर्सर बदलने से भी थोड़ा 'abada' लगेगा */
+                e.currentTarget.style.cursor = "pointer"; 
               }}
-              onMouseLeave={(e) => { /* Mouse leave इवेंट हैंडलर */
+              onMouseLeave={(e) => { 
                 e.currentTarget.style.transform = "scale(1)";
                 e.currentTarget.style.backgroundColor = "#fff";
                 e.currentTarget.style.cursor = "default";

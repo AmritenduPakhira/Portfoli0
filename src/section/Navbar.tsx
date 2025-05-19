@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // You can install lucide-react or use any icon lib
+import { Menu, X } from "lucide-react"; 
 
 
 
-// how to install lucide-react? 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
