@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
     <p className="text-gray-400 mt-3">Resilient Software Engineer</p>
 
     {/* Social Icons */}
-    {/* <div className="flex flex-wrap gap-4 mt-6">
+    <div className="flex flex-wrap gap-4 mt-6">
       <a href="https://www.linkedin.com/in/amritendupakhira/" target="_blank" rel="noopener noreferrer"
         className="p-3 rounded-full bg-dark text-[#0e76a8] shadow-lg hover:scale-110 hover:bg-gray-100 transition"
         aria-label="LinkedIn">
@@ -169,7 +169,7 @@ const Hero: React.FC = () => {
         aria-label="Facebook">
         <FaFacebookIcon />
       </a>
-    </div> */}
+    </div>
 
     {/* Description */}
     <p className="text-white text-sm sm:text-base mt-6 leading-relaxed break-words">

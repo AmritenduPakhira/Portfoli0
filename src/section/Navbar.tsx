@@ -28,7 +28,7 @@ const Navbar = () => {
             <a href="#certificates" className="hover:text-gray-500 cursor-pointer">Certificates</a>
           </li>
           <li>
-            <a href="#achievements" className="hover:text-gray-500 cursor-pointer">Achievements</a>
+            <a href="achivements" className="hover:text-gray-500 cursor-pointer">Achievements</a>
           </li>
           <li>
             <a href="#contactus">
@@ -64,7 +64,8 @@ const Navbar = () => {
               <a href="#certificates" className="hover:text-gray-500 cursor-pointer">Certificates</a>
             </li>
             <li>
-              <a href="#achievements" className="hover:text-gray-500 cursor-pointer">Achievements</a>
+              
+              <a href="#achivements" className="hover:text-gray-500 cursor-pointer">Achievements</a>
             </li>
             <li>
               <a href="#contactus">
