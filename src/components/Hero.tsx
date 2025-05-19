@@ -134,58 +134,58 @@ const Hero: React.FC = () => {
     <>
       <section className="relative w-full min-h-screen overflow-hidden flex flex-col lg:flex-row pt-20">
 
-  {/* Left Side */}
-  <div className="lg:w-1/2 w-full bg-[#0f172a] flex flex-col justify-center items-start p-6 lg:p-10 z-10">
-    <h2 className="text-xl mb-2 text-white ">Hi, I am</h2>
+        {/* Left Side */}
+        <div className="lg:w-1/2 w-full bg-[#0f172a] flex flex-col justify-center items-start p-6 lg:p-10 z-10">
+          <h2 className="text-xl mb-2 text-white ">Hi, I am</h2>
 
-    <h1 className="text-4xl lg:text-6xl font-bold text-gray-300">Amritendu Pakhira</h1>
-    <p className="text-gray-400 mt-3">Resilient Software Engineer</p>
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-300">Amritendu Pakhira</h1>
+          <p className="text-gray-400 mt-3">Resilient Software Engineer</p>
 
-    {/* Social Icons */}
-    <div className="flex flex-wrap gap-4 mt-6">
-      <a href="https://www.linkedin.com/in/amritendupakhira/" target="_blank" rel="noopener noreferrer"
-        className="p-3 rounded-full bg-dark text-[#0e76a8] shadow-lg hover:scale-110 hover:bg-gray-100 transition"
-        aria-label="LinkedIn">
-        <FaLinkedinIcon />
-      </a>
-      <a href="https://github.com/AmritenduPakhira" target="_blank" rel="noopener noreferrer"
-        className="p-3 rounded-full bg-dark text-[#0e76a8] shadow-lg hover:scale-110 hover:bg-gray-100 transition"
-        aria-label="Github">
-        <FaGithubIcon />
-      </a>
-      <a href="https://www.instagram.com/amritendupakhira123?igsh=MWllbA3bXdhY3o2ZQ==" target="_blank"
-        rel="noopener noreferrer"
-        className="p-3 rounded-full bg-dark text-[#e1306c] shadow-lg hover:scale-110 hover:bg-pink-100 transition"
-        aria-label="Instagram">
-        <FaInstagramIcon />
-      </a>
-      <a href="https://x.com/AmritenduPakhi3"
-        className="p-3 rounded-full bg-dark text-[#1DA1F2] shadow-lg hover:scale-110 hover:bg-blue-100 transition"
-        aria-label="Twitter">
-        <FaTwitterIcon />
-      </a>
-      <a href="https://www.facebook.com/amritendupakhira.riju"
-        className="p-3 rounded-full bg-dark text-[#1877F2] shadow-lg hover:scale-110 hover:bg-blue-100 transition"
-        aria-label="Facebook">
-        <FaFacebookIcon />
-      </a>
-    </div>
+          {/* Social Icons */}
+          <div className="flex flex-wrap gap-4 mt-6">
+            <a href="https://www.linkedin.com/in/amritendupakhira/" target="_blank" rel="noopener noreferrer"
+              className="p-3 rounded-full bg-dark text-[#0e76a8] shadow-lg hover:scale-110 hover:bg-gray-100 transition"
+              aria-label="LinkedIn">
+              <FaLinkedinIcon />
+            </a>
+            <a href="https://github.com/AmritenduPakhira" target="_blank" rel="noopener noreferrer"
+              className="p-3 rounded-full bg-dark text-[#0e76a8] shadow-lg hover:scale-110 hover:bg-gray-100 transition"
+              aria-label="Github">
+              <FaGithubIcon />
+            </a>
+            <a href="https://www.instagram.com/amritendupakhira123?igsh=MWllbA3bXdhY3o2ZQ==" target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-dark text-[#e1306c] shadow-lg hover:scale-110 hover:bg-pink-100 transition"
+              aria-label="Instagram">
+              <FaInstagramIcon />
+            </a>
+            <a href="https://x.com/AmritenduPakhi3"
+              className="p-3 rounded-full bg-dark text-[#1DA1F2] shadow-lg hover:scale-110 hover:bg-blue-100 transition"
+              aria-label="Twitter">
+              <FaTwitterIcon />
+            </a>
+            <a href="https://www.facebook.com/amritendupakhira.riju"
+              className="p-3 rounded-full bg-dark text-[#1877F2] shadow-lg hover:scale-110 hover:bg-blue-100 transition"
+              aria-label="Facebook">
+              <FaFacebookIcon />
+            </a>
+          </div>
 
-    {/* Description */}
-    <p className="text-white text-sm sm:text-base mt-6 leading-relaxed break-words">
-      Being a software engineer and a skilled full stack developer with strong expertise in both frontend and backend technologies, including databases like MongoDB and SQL, I am dedicated to writing clean, efficient code. While I occasionally face challenges with debugging and troubleshooting, I view these as valuable opportunities to deepen my problem-solving skills and enhance my development experience.
-    </p>
-  </div>
+          {/* Description */}
+          <p className="text-white text-sm sm:text-base mt-6 leading-relaxed break-words">
+            Being a software engineer and a skilled full stack developer with strong expertise in both frontend and backend technologies, including databases like MongoDB and SQL, I am dedicated to writing clean, efficient code. While I occasionally face challenges with debugging and troubleshooting, I view these as valuable opportunities to deepen my problem-solving skills and enhance my development experience.
+          </p>
+        </div>
 
-  {/* Right Side - Image */}
-  <div className="lg:w-1/2 w-full bg-[#0f172a] flex justify-center items-center px-4 py-6 lg:p-10">
-    <img
-      src="./profile1.JPG"
-      alt="Profile"
-      className="object-contain max-h-[60vh] lg:max-h-[80vh] w-full rounded-lg shadow-xl"
-    />
-  </div>
-</section>
+        {/* Right Side - Image */}
+        <div className="lg:w-1/2 w-full bg-[#0f172a] flex justify-center items-center px-4 py-6 lg:p-10">
+          <img
+            src="./profile1.JPG"
+            alt="Profile"
+            className="object-contain max-h-[60vh] lg:max-h-[80vh] w-full rounded-lg shadow-xl"
+          />
+        </div>
+      </section>
 
 
       {/* Experience Section */}
@@ -239,140 +239,168 @@ const Hero: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Project 1 */}
-            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">CropLife - Smart Farmer Support Platform</h3>
-                <p className="text-cyan-400 mb-2" >
-                  <strong>Tech Stack:</strong> React, Node.js, Express.js, MongoDB, Razorpay, GSAP
-                </p>
-                <p className="text-gray-200 text-justify">
-                  CropLife is an innovative project dedicated to transforming the agricultural sector by empowering farmers and small businesses through a comprehensive online platform. The project aims to enhance productivity, streamline operations, and foster community support. Key features include an e-commerce platform that enables farmers to sell their produce directly to consumers, a blog offering valuable agricultural insights, and various technological tools to improve farming practices and supply chain management. The platform also emphasizes community building by facilitating collaboration and knowledge exchange among farmers.  </p>
+            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition flex flex-col">
+              <div className="relative w-full overflow-hidden rounded-t-xl">
+                <img
+                  src="\project1.png" // Replace with actual URL
+                  alt="Project 1"
+                  className="object-cover w-full h-48"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mt-4 mb-2">Crop Life</h3> {/* Reduced mb to 2 */}
+              <p className="text-gray-200 text-sm  mb-4" style={{ minHeight: '3rem' }}>
+                CropLife is a smart farming platform that helps farmers sell produce online, access expert blogs, and use tech tools for better productivity. It fosters community support and streamlines agricultural operations.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  React
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  Node.js
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  MongoDB
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  RazorpayAPI
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  Express.js
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  TypeScript
+                </span>
               </div>
 
-              <a
-                href="https://github.com/AmritenduPakhira/farmtech" // Replace with your actual URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-              >
-                Know More
-              </a>
+              <div className="flex gap-2">
+                <a
+                  href="https://github.com/AmritenduPakhira/farmtech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-1/2"
+                >
+                  {/* Icon */} Code
+                </a>
+                <a
+                  href="https://farmtechs.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-1/2"
+                >
+                  {/* Icon */} Live Demo
+                </a>
+              </div>
             </div>
 
             {/* Project 2 */}
-            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Intelli Healthcare System</h3>
-                <p className="text-cyan-400 mb-2">
-                  <strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, React, HTML, Bootstrap, IOT
-                </p>
-                <p className="text-gray-200 text-justify">
-                  The Intelli HealthCare System is an IoT-based smart health monitoring system designed to automate various tasks and streamline the healthcare process. It provides real-time health monitoring and tracking of vital parameters of patients, making it a revolutionary healthcare solution in India.The system is equipped with load sensors and laser sensors to monitor and track vital health parameters such as BMI calculation, pulse rate, weight, and height. The collected data is then updated in an interactive dashboard, providing doctors and healthcare professionals with real-time insights into their patients' health. In addition, the system recommends a customised diet plan with products listed along with their macros, helping patients maintain a healthy lifestyle. The system also has a feature to track upcoming consultations with doctors, ensuring that patients never miss an appointment. </p>
-
+            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition flex flex-col">
+              <div className="relative w-full overflow-hidden rounded-t-xl">
+                <img
+                  src="\project2.png" // Replace with actual URL
+                  alt="Project 2"
+                  className="object-cover w-full h-48"
+                />
               </div>
-
-              <a
-                href="https://drive.google.com/file/d/1LA20miIMDA-FoauOOKx_sKQLNr_Ld-2k/view" // Replace with your actual URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-              >
-                Know More
-              </a>
-
+              <h3 className="text-xl font-semibold mt-4 mb-2">Book Hub</h3> {/* Reduced mb to 2 */}
+              <p className="text-gray-200 text-sm mb-4" style={{ minHeight: '3rem' }}>
+                BookHub is a modern web application designed for book lovers to explore, review, and manage their favorite reads. It allows users to browse a vast collection of books, save them to their library, and share reviews with a vibrant reading community.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                JavaScript
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                 React
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  Expree.js
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  Node.js
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  Bootstrap
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  API
+                </span>
+              </div>
+              <div className="flex gap-2">
+                <a
+                  href="https://github.com/AmritenduPakhira/Bookhub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-1/2"
+                >
+                  {/* Icon */} Code
+                </a>
+                <a
+                  href="https://bookhub-chi.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-1/2"
+                >
+                  {/* Icon */} Live Demo
+                </a>
+              </div>
             </div>
 
-            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">BookHub</h3>
-                <p className="text-cyan-400 mb-2">
-                  <strong>Tech Stack:</strong> Java Script, Node.js, Express.js, MongoDB, TypeScript, React
-                </p>
-                <p className="text-gray-200 text-justify">
-                  Bookhub is a digital platform that allows users to share their knowledge and ideas. Users can enhance their learning through articles, tutorials, and discussions. The platform promotes community engagement and collaboration, helping people learn from each other.              </p>
-
+            {/* Project 3 */}
+            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition flex flex-col">
+              <div className="relative w-full overflow-hidden rounded-t-xl">
+                <img
+                  src="\project3.png" // Replace with actual URL
+                  alt="Project 3"
+                  className="object-cover w-full h-48"
+                />
               </div>
-
-              <a
-                href="https://github.com/AmritenduPakhira/Bookhub" // Replace with your actual URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-              >
-                Know More
-              </a>
-            </div>
-
-            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">ChatBot</h3>
-                <p className="text-cyan-400 mb-2">
-                  <strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, React, API
-                </p>
-                <p className="text-gray-200 text-justify">
-                  This is a simple real-time chatbot frontend built with React that offers several interactive features. It includes voice input through speech recognition, allowing users to speak their messages. Bot replies come with a typing animation to create a more natural conversation feel. The chat history is saved locally using localStorage, so users can revisit past conversations. User and bot avatar icons enhance the visual experience. The frontend connects seamlessly to a backend API built with Node.js and Express for real-time communication.
-                </p>
+              <h3 className="text-xl font-semibold mt-4 mb-2">Intelli Healthcare System</h3> {/* Reduced mb to 2 */}
+              <p className="text-gray-200 text-sm mb-4" style={{ minHeight: '3rem' }}>
+                Intelli Healthcare System is a smart medical management platform that streamlines patient records, appointments, and diagnostics. It enhances healthcare delivery through real-time data access, AI-driven insights, and efficient communication between doctors and patients.
+              </p>
+             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  IOT
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  Node.js
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  MongoDB
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  MQTT
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  Express.js
+                </span>
+                <span className="inline-block whitespace-nowrap bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold">
+                  TypeScript
+                </span>
               </div>
-              <a
-                href="https://github.com/AmritenduPakhira/chatbot" // Replace with your actual URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-              >
-                Know More
-              </a>
-            </div>
-
-            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Smart Attendance System By Using Raspberry Pi</h3>
-                <p className="text-cyan-400 mb-2">
-                  <strong>Tech Stack:</strong> IOT, Raspberry Pi, Python, OpenCV, Machine Learning
-                </p>
-                <p className="text-gray-200 text-justify">
-                  I had the privilege of spearheading a project that leveraged cutting-edge technology to revolutionize attendance tracking. Our team developed a Smart Attendance System using cameras, a powerful application of computer vision and machine learning. This technology automatically records and tracks attendance, offering remarkable accuracy and efficiency. At the heart of our project lies advanced computer vision algorithms and machine learning techniques. These innovations enable our system to analyze video footage in real-time. It recognizes individuals' faces in the footage and logs their attendance with precision, capturing entry and exit times effortlessly.
-                  Our project addresses critical challenges in traditional, paper-based attendance systems. Inaccuracy and human errors are mitigated, eliminating issues like misread handwriting and missed entries. The time-consuming manual process, particularly in large classes or crowded settings, is streamlined, reducing the burden on educators.
-                </p>
+              <div className="flex gap-2">
+                <a
+                  href="https://github.com/AmritenduPakhira/IntelliHealthcare-Systrm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-1/2"
+                >
+                  {/* Icon */} Code
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1LA20miIMDA-FoauOOKx_sKQLNr_Ld-2k/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-1/2"
+                >
+                  {/* Icon */} Live Demo
+                </a>
               </div>
-              <a
-                href="https://www.youtube.com/watch?v=u0ZefdprpBk" // Replace with your actual URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-              >
-                Know More
-              </a>
             </div>
-
-            <div className="bg-slate-700 p-6 rounded-xl shadow-lg hover:scale-105 transition">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Empowering Physically Disabled Individuals with Face Recognition Robot</h3>
-                <p className="text-cyan-400 mb-2">
-                  <strong>Tech Stack:</strong> OpenCV, Python, Machine Learning, Raspberry Pi, Arduino , IOT
-                </p>
-                <p className="text-gray-200 text-justify">
-                  In this project, I've had the privilege of developing a remarkable Face Recognition Robot that has the potential to transform the lives of physically disabled individuals. At its core, this robot harnesses cutting-edge facial recognition algorithms to identify individuals in real-time with remarkable accuracy. This technology allows for seamless and effortless interactions, empowering users in a profound way. What sets this project apart is its autonomy. Through a fusion of advanced computer vision and sensor technologies, the robot is capable of autonomous navigation. It can track and follow recognized individuals, prioritizing safety and precision in every movement it makes. This feature not only reduces the need for constant manual control but also ensures a sense of security for both users and caregivers. </p>
-              </div>
-              <a
-                href="https://www.youtube.com/watch?v=LXoSmVepxLI&feature=youtu.be" // Replace with your actual URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-              >
-                Know More
-              </a>
-            </div>
-
-
           </div>
         </div>
-
-
-
       </section>
       {/* {skills} */}
       <section id="skills" className="bg-[#2C2D50] text-white py-16 px-4">
