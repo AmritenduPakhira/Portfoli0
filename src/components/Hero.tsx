@@ -8,6 +8,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FaJava } from 'react-icons/fa';
 import { FaAws, FaCloud, FaBrain, FaLock, FaRobot } from 'react-icons/fa';
 // import { SiIbm, SiCisco, SiIbmcloud } from 'react-icons/si';
+import { motion } from "framer-motion";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaDownload } from "react-icons/fa";
+
 
 import {
   SiTailwindcss,
@@ -53,37 +56,65 @@ const skills = [
 ];
 
 const certifications = [
-    {
-      title: "Java Full Stack Developer",
-      issuer: "Wipro TalentNext",
-      icon: <FaJava size={30} className="text-white" />
-    },
-    {
-      title: "AWS Cloud Practitioner Essentials",
-      issuer: "Amazon Web Services",
-      icon: <FaAws size={30} className="text-white" />
-    },
-    {
-      title: "Introduction to Cloud Computing",
-      issuer: "IBM",
-       icon: <FaCloud size={30} className="text-white" />
-    },
-    {
-      title: "AI Certification Workshop",
-      issuer: "IIT Roorkee",
-      icon: <FaBrain size={30} className="text-white" />
-    },
-    {
-      title: "Introduction to Cybersecurity",
-      issuer: "Cisco",
-      icon: <FaLock size={30} className="text-white" />
-    },{
-      title: "AI Developer Professional Certificate",
-      issuer: "IBM",
-      icon: <FaRobot size={30} className="text-white" />
-    }
-    
-  ];
+  {
+    title: "Java Full Stack Developer",
+    issuer: "Wipro TalentNext",
+    icon: <FaJava size={30} className="text-white" />
+  },
+  {
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "Amazon Web Services",
+    icon: <FaAws size={30} className="text-white" />
+  },
+  {
+    title: "Introduction to Cloud Computing",
+    issuer: "IBM",
+    icon: <FaCloud size={30} className="text-white" />
+  },
+  {
+    title: "AI Certification Workshop",
+    issuer: "IIT Roorkee",
+    icon: <FaBrain size={30} className="text-white" />
+  },
+  {
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco",
+    icon: <FaLock size={30} className="text-white" />
+  }, {
+    title: "AI Developer Professional Certificate",
+    issuer: "IBM",
+    icon: <FaRobot size={30} className="text-white" />
+  }
+
+];
+
+const achievements = [
+  {
+    title: "Robotics Project Display",
+    description:
+      "Secured the 3rd position at CUIET, competing against participants from both CUIET and Deakin University.",
+    icon: "🤖",
+  },
+  {
+    title: "Academic Excellence",
+    description: "Ranked top position among all students in the school (10+2).",
+    icon: "🎓",
+  },
+  {
+    title: "DSA Mastery",
+    description:
+      "Cracked 250+ challenging DSA problems, sharpening analytical thinking and mastering core algorithms.",
+    icon: "🧠",
+  },
+  {
+    title: "Naukri Campus Competition",
+    description:
+      "Secured an All India Rank of 320 (Top 1%) in the Naukri Campus Young Turks Competition – Round 1.",
+    icon: "🏆",
+  },
+];
+
+
 
 
 
@@ -95,6 +126,8 @@ const FaInstagramIcon: React.FC = () => <FontAwesomeIcon icon={faInstagram} size
 const FaTwitterIcon: React.FC = () => <FontAwesomeIcon icon={faTwitter} size="lg" />;
 const FaFacebookIcon: React.FC = () => <FontAwesomeIcon icon={faFacebook} size="lg" />;
 const FaGithubIcon: React.FC = () => <FontAwesomeIcon icon={faGithub} size="lg" />;
+
+
 
 const Hero: React.FC = () => {
   return (
@@ -326,7 +359,7 @@ const Hero: React.FC = () => {
               </a>
             </div>
 
-            {/* You can add more projects below by copying one block */}
+           
           </div>
         </div>
 
@@ -342,7 +375,15 @@ const Hero: React.FC = () => {
             {skills.map((skill) => (
               <div
                 key={skill.name}
-                className="flex flex-col items-center space-y-2 text-center"
+                className="flex flex-col items-center space-y-2 text-center transition transform duration-300 ease-in-out cursor-pointer"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.1)";
+                  e.currentTarget.style.color = "#a7f3d0";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.color = "white";
+                }}
               >
                 <div className="text-4xl">{skill.icon}</div>
                 <span className="text-sm">{skill.name}</span>
@@ -352,26 +393,196 @@ const Hero: React.FC = () => {
         </div>
       </section>
 
-       {/* {Certificates} */}
-       <section className="bg-[#0f172a] text-white py-12 px-6">
-      <div className="text-center mb-12">
-        <h3 className="text-sm tracking-widest uppercase">What I Have</h3>
-        <h2 className="text-3xl font-bold">Certifications</h2>
-        <p className="mt-2 text-gray-400 max-w-xl mx-auto">
-          These certifications highlight my dedication to continuous learning and expertise in cloud, security, and full stack development.
-        </p>
-      </div>
-      <div className="grid md:grid-cols-3 gap-8 text-center">
-        {certifications.map((cert, index) => (
-          <div key={index} className="flex flex-col items-center space-y-4 bg-[#1e293b] p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-            {cert.icon}
-            <h4 className="font-semibold text-lg">{cert.title}</h4>
-            <p className="text-gray-400 text-sm">{cert.issuer}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+      {/* {Certificates} */}
+      <section id="certificates" className="bg-[#0f172a] text-white py-12 px-6">
+        <div className="text-center mb-12">
+          <h3 className="text-sm tracking-widest uppercase">What I Have</h3>
+          <h2 className="text-3xl font-bold">Certifications</h2>
+          <p className="mt-2 text-gray-400 max-w-xl mx-auto">
+            These certifications highlight my dedication to continuous learning and expertise in cloud, security, and full stack development.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8 text-center">
+          {certifications.map((cert, index) => (
+            <div key={index} className="flex flex-col items-center space-y-4 bg-[#1e293b] p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+              {cert.icon}
+              <h4 className="font-semibold text-lg">{cert.title}</h4>
+              <p className="text-gray-400 text-sm">{cert.issuer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* {Lettr of Recommendation} */}
 
+      <section className="bg-[#2C2D50] py-16 px-6 md:px-12">
+        <motion.div
+          className="max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <h2 className="text-center text-3xl md:text-4xl text-white font-bold mb-4">
+            Letter of Recommendation
+          </h2>
+          <p className="text-center text-white text-lg mb-10">
+            I am deeply honored to have received a Letter of Recommendation from
+            <span className="font-semibold text-white"> Dr. Sourav Roy</span>, Director & Professor of Practice at Chitkara University,
+            in recognition of my work in the field of Full Stack Development.
+          </p>
+
+          <motion.div
+            className="bg-white shadow-lg rounded-xl p-8 md:p-10 text-gray-800 text-lg leading-relaxed flex flex-col md:flex-row md:items-start md:justify-between"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          >
+            <div className="md:flex-1">
+              <p>
+                This recommendation acknowledges the consistent efforts, dedication,
+                and excellence I demonstrated throughout my college journey. I am
+                truly grateful for Dr. Roy's guidance and support, which played a
+                significant role in shaping my technical skills and professional
+                growth.
+              </p>
+
+              <div className="mt-6 text-right">
+                <p className="font-semibold text-gray-800">Dr. Sourav Roy</p>
+                <p className="text-sm text-gray-500">
+                  Director & Professor of Practice<br />
+                  Chitkara University
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 md:mt-0 md:ml-8 flex-shrink-0">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQGH975RGewZFQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724093611503?e=1753315200&v=beta&t=4jrfQTMKAd9oDJKSgsVKd2BE3oHoQ-Vb3qGVwbj4G_0"
+                alt="Dr. Sourav Roy"
+                className="w-40 h-40 rounded-full object-cover shadow-md"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="mt-8 flex justify-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <a
+              href="https://drive.google.com/file/d/1kEUZ_ukVmow4fnUioHvxh21yE6D8989S/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-colors duration-300"
+            >
+              View / Download Letter
+            </a>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* {Achivements} */}
+      <section id= "achivements" style={{ fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", backgroundColor: "#f5f7fa", padding: "40px 20px" }}>
+        <h2 style={{ color: "#0056b3", fontWeight: "700", fontSize: "2.2rem", marginBottom: "20px" }}>
+          Achievements
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "25px" }}>
+          {achievements.map(({ title, description, icon }) => (
+            <div
+              key={title}
+              style={{
+                backgroundColor: "#fff",
+                borderRadius: "12px",
+                padding: "25px",
+                boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out", /* ट्रांजिशन जोड़ा गया */
+              }}
+              onMouseEnter={(e) => { /* Mouse enter इवेंट हैंडलर */
+                e.currentTarget.style.transform = "scale(1.05)";
+                e.currentTarget.style.backgroundColor = "#e0f7fa";
+                e.currentTarget.style.cursor = "pointer"; /* कर्सर बदलने से भी थोड़ा 'abada' लगेगा */
+              }}
+              onMouseLeave={(e) => { /* Mouse leave इवेंट हैंडलर */
+                e.currentTarget.style.transform = "scale(1)";
+                e.currentTarget.style.backgroundColor = "#fff";
+                e.currentTarget.style.cursor = "default";
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "2.8rem",
+                  marginBottom: "15px",
+                  color: "#007bff",
+                }}
+                aria-label="icon"
+              >
+                {icon}
+              </div>
+              <h3 style={{ fontWeight: "600", fontSize: "1.25rem", color: "#222", marginBottom: "10px" }}>
+                {title}
+              </h3>
+              <p style={{ fontSize: "1rem", color: "#555", lineHeight: "1.5" }}>
+                {description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* {Contact us} */}
+
+      <section id="conatctus" className="bg-slate-600 text-white py-16 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left: Google Map */}
+          <div className="w-full h-96 rounded-2xl overflow-hidden shadow-lg border-2 border-white">
+            <iframe
+              title="My Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472587.3928086891!2d87.00933067343749!3d22.27461799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02b45affffffff%3A0xdfbf6be6ae060bf3!2sAllahabad%20Bank%20-%20Pingla%20Branch!5e0!3m2!1sen!2sin!4v1747635098058!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          {/* Right: Contact Details */}
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold">Contact Me</h2>
+            <p className="text-lg">Feel free to reach out anytime:</p>
+
+            <div className="space-y-4 text-base">
+              <div className="flex items-start gap-4">
+                <FaMapMarkerAlt className="text-xl mt-1 text-blue-300" />
+                <p>Indian Bank, Pingla, Paschim Medinipur, West Bengal</p>
+              </div>
+              <div className="flex items-start gap-4">
+                <FaPhoneAlt className="text-xl mt-1 text-green-300" />
+                <p>+91-8900564054</p>
+              </div>
+              <div className="flex items-start gap-4">
+                <FaEnvelope className="text-xl mt-1 text-yellow-300" />
+                <p>pakhiraamritendu@gmail.com</p>
+              </div>
+            </div>
+
+            <a
+              href="/my_resume.pdf"
+              download
+              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow transition duration-300"
+            >
+              <FaDownload /> Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
 
 
     </>

@@ -25,17 +25,19 @@ const Navbar = () => {
       {/* Desktop Nav */}
       <ul className="hidden md:flex space-x-8 text-black font-medium">
         <li> <a href="#experience" className="hover:text-gray-500 cursor-pointer">Experience</a></li>
-        <li  className="hover:text-gray-500 cursor-pointer">Skills <a/> </li>
+        <li > <a href="#skills" className="hover:text-gray-500 cursor-pointer">Skills</a></li>
         <li><a href="#project" className="hover:text-gray-500 cursor-pointer">Projects </a> </li>
 
-        <li className="hover:text-gray-500 cursor-pointer">Certificates</li>
-        <li className="hover:text-gray-500 cursor-pointer">Achievements</li>
+        <li ><a href="#certificates" className="hover:text-gray-500 cursor-pointer"> Certificates</a></li>
+        <li > <a href="#achivements" className="hover:text-gray-500 cursor-pointer">Achivements</a></li>
         {/* <li className="hover:text-gray-500 cursor-pointer">Achievement </li> */}
 
         <li>
-          <button className="bg-black text-white rounded-full px-4 py-1 font-semibold text-sm hover:shadow">
-            CONTACT ME
-          </button>
+          <a href="#conatctus">
+            <button className="bg-black text-white rounded-full px-4 py-1 font-semibold text-sm hover:shadow">
+              CONTACT ME
+            </button>
+          </a>
         </li>
       </ul>
 
@@ -52,14 +54,16 @@ const Navbar = () => {
         <div className="absolute top-16 left-0 w-full bg-white shadow-md px-6 py-4 md:hidden z-40">
           <ul className="flex flex-col space-y-4 text-black font-medium">
             <li> <a href="#experience" className="hover:text-gray-500 cursor-pointer">Experience</a></li>
-            <li className="hover:text-gray-500 cursor-pointer">Skills</li>
-            <li className="hover:text-gray-500 cursor-pointer">Projects</li>
-            <li className="hover:text-gray-500 cursor-pointer">Certificates</li>
-            <li className="hover:text-gray-500 cursor-pointer">Achievements</li>
+            <li> <a href="#skills" className="hover:text-gray-500 cursor-pointer">Skills</a></li>
+            <li> <a href="#project" className="hover:text-gray-500 cursor-pointer">Projects</a></li>
+            <li ><a href="#certificates" className="hover:text-gray-500 cursor-pointer">Certificates</a></li>
+            <li > <a href="#achivements" className="hover:text-gray-500 cursor-pointer">Achivements</a></li>
             <li>
+              <a href="#conatctus">
               <button className="bg-black text-white rounded-full px-4 py-2 font-semibold text-sm hover:shadow w-full">
                 CONTACT ME
               </button>
+              </a>
             </li>
           </ul>
         </div>
