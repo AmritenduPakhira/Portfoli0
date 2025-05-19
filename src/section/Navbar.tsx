@@ -25,8 +25,8 @@ const Navbar = () => {
       {/* Desktop Nav */}
       <ul className="hidden md:flex space-x-8 text-black font-medium">
         <li> <a href="#experience" className="hover:text-gray-500 cursor-pointer">Experience</a></li>
-        <li className="hover:text-gray-500 cursor-pointer">Skills</li>
-        <li className="hover:text-gray-500 cursor-pointer">Projects</li>
+        <li  className="hover:text-gray-500 cursor-pointer">Skills <a/> </li>
+        <li><a href="#project" className="hover:text-gray-500 cursor-pointer">Projects </a> </li>
 
         <li className="hover:text-gray-500 cursor-pointer">Certificates</li>
         <li className="hover:text-gray-500 cursor-pointer">Achievements</li>
