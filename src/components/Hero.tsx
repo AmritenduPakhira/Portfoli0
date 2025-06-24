@@ -180,7 +180,7 @@ const Hero: React.FC = () => {
         {/* Right Side - Image */}
         <div className="lg:w-1/2 w-full bg-[#0f172a] flex justify-center items-center px-4 py-6 lg:p-10">
           <img
-            src="./profile1.JPG"
+            src="./profile2.JPG"
             alt="Profile"
             className="object-contain max-h-[60vh] lg:max-h-[80vh] w-full rounded-lg shadow-xl"
           />
